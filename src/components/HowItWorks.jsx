@@ -1,0 +1,4 @@
+import {Section,Card,Icon} from './ui'
+const S=[['AGORA','Solicite uma corrida quando precisar.','M13 2L3 14h8l-1 8 10-12h-8z'],['AGENDAR','Programe sua viagem com antecedência.','M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z'],['VIAGEM','Viaje entre cidades com praticidade.','M5 19a2 2 0 100-4 2 2 0 000 4zM19 9a2 2 0 100-4 2 2 0 000 4zM7 17c6 0 2-10 8-10h2']]
+export default function HowItWorks(){return(<Section id="como-funciona" title="Como vai funcionar" tone="bg-navy2/60">
+<div className="mt-10 grid gap-4 md:grid-cols-3">{S.map(([t,d,p])=><Card key={t}><div className="mb-4 grid h-12 w-12 place-items-center rounded-xl bg-lime text-navy"><Icon d={p}/></div><h3 className="text-xl font-extrabold">{t}</h3><p className="mt-2 text-white/70">{d}</p></Card>)}</div></Section>)}
